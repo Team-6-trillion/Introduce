@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #999;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 500px;
+        }
+
+        .team-item {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-basis: 500px;
+            margin: 0 15px;
+
+
+            transition: all .4s;
+
+        }
+
+        .team-item:hover {
+            flex-basis: 1000px;
+            margin: 0 20px;
+
+        }
+
+        .team-item img {
+            width: 100%;
+            border-radius: 15px;
+            height: 400px;
+
+        }
+
+        .team-item:hover .profile-contents p {
+            max-height: 250px;
+        }
+
+        .profile {
+            background-color: #222;
+            position: relative;
+        }
+
+        .profile:before {
+            content: ' ';
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 250px;
+        }
+
+        .profile-contents {
+            position: absolute;
+
+            bottom: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .profile-contents h2 {
+            font-size: 20px;
+        }
+
+        .profile-contents h2 span {
+            display: block;
+            font-size: 12px;
+        }
+
+        .profile_red {
+            color: red;
+        }
+
+        .profile_blue {
+            color: rgb(106, 106, 248);
+        }
+
+        .profile_purple {
+            color: purple;
+        }
+
+        .profile_yellow {
+            color: yellow;
+        }
+
+        .profile-contents p {
+            color: white;
+            font-size: 10px;
+            min-width: 140px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="team">
+            <li class="team-item">
+                <div class="profile profile_red">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2020%2F07%2F23%2F0000124767_001_20200723104041438.jpg&type=sc960_832">
+                    <div class="profile-contents">
+                        <h2>이름<span>
+                                소개
+                            </span></h2>
+                        <p>블라블라블라블라</p>
+                    </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="profile profile_blue">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2020%2F07%2F23%2F0000124767_001_20200723104041438.jpg&type=sc960_832">
+                    <div class="profile-contents">
+                        <h2>이름<span>
+                                소개
+                            </span></h2>
+                        <p>블라블라블라블라</p>
+                    </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="profile profile_purple">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2020%2F07%2F23%2F0000124767_001_20200723104041438.jpg&type=sc960_832">
+                    <div class="profile-contents">
+                        <h2>이름<span>
+                                소개
+                            </span></h2>
+                        <p>블라블라블라블라</p>
+                    </div>
+                </div>
+            </li>
+            <li class="team-item">
+                <div class="profile profile_yellow">
+                    <img
+                        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5575%2F2020%2F07%2F23%2F0000124767_001_20200723104041438.jpg&type=sc960_832">
+                    <div class="profile-contents">
+                        <h2>이름<span>
+                                소개
+                            </span></h2>
+                        <p>블라블라블라블라</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
