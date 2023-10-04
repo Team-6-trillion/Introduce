@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>예원소개</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+        * {
+            font-family: 'Jeju Myeongjo', serif;
+        }
+
+        /* 상단바 */
+        .menu * {
+            display: inline;
+        }
+
+        .menu li {
+            margin: 35px;
+        }
+
+        .menu li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .menu ul {
+            padding-left: 0px;
+        }
+
+        .menu {
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            padding-top: 70px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+        }
+
+        /* 상단바끝 */
+
+        /* 1장 */
+        .index img {
+            margin-right: 50px;
+            border-radius: 20px;
+        }
+
+        .index h3 {
+            margin-left: 20px;
+        }
+
+        /* 1장끝 */
+
+        /* 2장 */
+
+        .adad {
+            margin-top: 100px;
+        }
+        .ad_img {
+            width: 300px;
+        height: 300px;
+        margin: 10px;
+        border-radius: 20px;
+        }
+        .ad_text{
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            line-height: 1.5em; 
+            margin-left: 20px;
+
+        }
+        .ad_text2 {
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            line-height: 1.5em; 
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+        .ad_text strong {
+        font-size: 2rem;
+        color: #777777;
+        }
+        .ad_text2 strong {
+            font-size: 2rem;
+        color: #2e2e2e;
+        }
+        .hi {
+            text-align: center;
+        }
+
+        /* 2장끝 */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            scroll-snap-type: y mandatory;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        section {
+            scroll-snap-align: start;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: x-large;
+        }
+
+        .index {
+            background-color:  #8ba2b4;
+            background-size: cover;
+        }
+
+        .advantage {
+            background-color: #d4c8b4;
+            background-size: cover;
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+        }
+
+        .style {
+            background-color: #8b8bb4;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#index"><b>인사말</b></a></li>
+                    <li><a href="#advantage"><b>장점</b></a></li>
+                    <li><a href="#style"><b>스타일</b></a></li>
+                    <li><a href="https://dnjs5432.tistory.com/" target="_blank"><b>블로그</b></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section id="index" class="index">
+                <img src="사진2.jpg" width="270px;" height="350px" alt="">
+                <h3>안녕하세요, <br>이예원입니다🤭<br><br>짧은 제 자기소개를 시작할게요!</h3>
+            </section>
+            <section id="advantage" class="advantage">
+                <div class="hi">
+                    <h1>제 장점은 이래요!
+                        <div class="adad">
+                            <div class="advantage">
+                                <img class="ad_img" src="요리.jpg">
+                                <p class="ad_text"> <strong>먹고 싶은건 다 해먹을 수 있어요🐷</strong><br><br>요리의 요자도 몰랐던 저는 단순히 '이거 먹고싶다!'라는 생각이 계기가 되어 서툴고 느리게 배워나갔어요.
+                                    <br>작은 호기심으로 시작했던게 평생을 함께 할 취미이자 장점이 되었고, 큰 교훈을 얻었습니다.
+                                    <br>바로 거창하게 생각하지말고, 일단 하자!그냥 계속 해보자!라는 교훈이에요.
+                                    <br><br>저에게 코딩도 그런 존재가 되길 바라며 열심히 하겠습니다.
+                            </div>
+                        </div>
+            </section>
+            <section id="style" class="style">
+                <div class="hi">
+                <h1>제 작업 스타일은 이래요!
+                    <div class="adad">
+                        <div class="style">
+                            <p class="ad_text2"> <strong>🐾혼자가 편하지만 많을수록 좋지🐾</strong><br><br>INFP인 저는 혼자일 때가 가장 마음이 편해서 평소에도 혼자 노는걸 좋아해요!
+                                <br>하지만 누군가의 조언, 다른 사람들과의 협업의 중요성을 알기 때문에 서로 돕는 관계를 지향합니다.
+                                <br>다른 사람들의 의견을 듣고 수용하는 것을 좋아하고, 다양한 아이디어를 제공하는 스타일입니다 🥰
+                                <br><br>조조, 화이팅!
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
