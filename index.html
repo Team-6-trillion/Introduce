@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6조 소개페이지</title>
-  </head>
-  <body>
-    안녕하세요
-  </body>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+@font-face {
+font-family: 'Pretendard-Regular';
+src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'IAMAPLAYER';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+ 
+.current {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.intro1 {
+font-family: 'GmarketSansMedium';
+font-size: 150px;
+margin-left: 72px;
+-webkit-text-fill-color: rgb(255, 255, 255);
+/* 텍스트 내용 색상 */
+-webkit-text-stroke-color: rgb(34, 34, 34);
+/* 텍스트 테두리 색상 */
+-webkit-text-stroke-width: 4px;
+}
+
+.text {
+font-family: 'GmarketSansMedium';
+position: absolute;
+color: rgb(36, 36, 36);
+left: 90px;
+font-size: 30px;
+line-height: 1.0;
+}
+
+#target::after {
+content: "|";
+right: 0;
+color: black;
+animation: caret 0.8s infinite;
+font-size: 40px;
+line-height: 10px;
+}
+
+@keyframes caret {
+50% {
+opacity: 0;
+}
+}
+
+.intro2 {
+font-family: 'IAMAPLAYER';
+font-size: 45px;
+position: absolute;
+color: rgb(43, 43, 43);
+text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.5);
+left: 102px;
+top: 553px;
+z-index: 9;
+}
+
+.intro2cover {
+background-color: rgb(255, 180, 180);
+width: 670px;
+height: 70px;
+position: absolute;
+left: 90px;
+top: 610px;
+z-index: 3;
+}
+</style>
+
+<!-- 한글 자모음 처리 Hangul-js -->
+<script src="https://unpkg.com/type-hangul"></script>
+
+<body>
+<strong class="current">
+<span class="blind">
+</span>20.2<span class="degree">°</span>
+</strong>
+<div class="intro1">조조를 소개합니다.</div>
+<pre class="text" id="target">
+우리팀의 특징은 조금 이상하다는 겁니다. 하지만 그런 우리에게도 목표는 있습니다.
+<br>바로 멋있어 보이는 것은 다 때려넣자! 그리고 디자인은
+<br>디자이너에게 맡기자! 열정! 열정! 열정!</pre>
+<h2 class="intro2">'Let me <br>introduce our team';</h2>
+<div class="intro2cover"></div>
+<script>
+TypeHangul.type("#target", {
+intervalType: 40,
+});
+</script>
+</body>
+
 </html>
