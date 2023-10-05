@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Bootstrap JavaScript 및 jQuery (선택 사항) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script>
+        function redirectToURL() {
+            var url = "https://www.naver.com/"; // 이곳에 원하는 URL을 넣으세요.
+            window.location.href = url;
+        }
+    </script>
+
+    <style>
+        .all {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        #box {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+        }
+
+        .text {
+            font-weight: bold;
+            color: #2b248079;
+            font-size: 50pt;
+        }
+
+        .blink {
+            animation: blink 0.5s infinite;
+        }
+
+        @keyframes blink {
+            to {
+                opacity: 0;
+            }
+        }
+
+
+        .title {
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+
+        }
+
+        .titlec {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 1000px
+        }
+
+        .titlec p {
+            font-size: 25pt;
+        }
+
+        .wrapper {
+
+            background-color: #ca97fd;
+            border-radius: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            width: 98%;
+
+        }
+
+        .profile {
+
+
+
+            width: 2000px;
+            height: 100%;
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .content {
+
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+            width: 1000px;
+
+            margin-left: 400px;
+
+
+        }
+
+        .photo {
+
+            position: absolute;
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+
+            width: 1000px;
+            height: 550px;
+
+
+
+        }
+
+        .box {
+
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 200px;
+
+            width: 1000px;
+            height: 100%;
+
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+
+        .list {
+
+
+            display: flex;
+            flex-direction: column;
+
+
+            width: 800px;
+            height: 80%;
+            font-size: 25pt;
+            ;
+
+
+
+
+        }
+
+
+
+
+
+        .img {
+            border-radius: 100px;
+            border-color: #ca97fd;
+            width: 80%;
+            height: 90%;
+            width: 350px;
+
+            margin-top: 20px;
+
+        }
+
+        .comment {
+            margin-left: 20px;
+            color: black;
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            
+            color: white;}
+
+
+
+
+
+
+        .gallay-box {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+
+
+
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+
+
+
+
+
+
+
+        .end {
+            border-radius: 20px;
+            background-color: #E0ACF3;
+            height: 200px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+
+            width: 98%;
+        }
+
+        .end-box {
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+
+            margin: auto;
+        }
+
+        .end-comment {
+
+
+            width: 300px;
+            height: 100px;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+
+        }
+
+        .end-comment button {
+            width: 1000px;
+            height: 100px;
+
+            background: none;
+            border: none;
+            font-size: 50pt;
+        }
+
+        .progress-container {
+
+            position: fixed;
+            top: 0px;
+            z-index: 1000;
+            width: 100%;
+            height: 3px;
+            background: #ccc;
+        }
+
+
+        .progress-bar {
+            height: 3px;
+            background: rgb(216, 16, 206);
+            width: 0%;
+        }
+
+        .top-all {
+
+
+
+
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+
+        }
+
+   
+
+        
+
+    
+
+        .modal-box button {
+            border: 0px;
+            border-radius: 15px;
+
+        }
+
+        .modal-box button img {
+            border-radius: 30px;
+
+            width: 350px;
+            height: 350px;
+
+            size: 100%;
+        }
+      
+    </style>
+    <script>
+        // 인터넷 스크롤 이동 시 이벤트
+        window.onscroll = function () { createPrograssBar() };
+
+        function createPrograssBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("indicator").style.width = scrolled + "%";
+        }
+    </script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+
+
+    <div class="all">
+        <div class="top-all">
+            <div class="progress-container">
+                <div class="progress-bar" id="indicator"></div>
+            </div>
+
+        </div>
+        <div class="title">
+            <div class="titlec">
+
+                <div id="box">
+                    <span class="text"></span><span class="blink">|</span>
+                </div>
+
+                <script>
+                    const content = "안녕하세요 6조 유우섭입니다.";
+                    const text = document.querySelector(".text");
+                    text.textContent = "";
+                    let txtIdx = 0;
+                    function typing() {
+                        let txt = content[txtIdx++];
+                        if (txt == undefined) return;
+                        text.innerHTML += txt === "\n" ? "<br/>" : txt;
+                        if (txtIdx > content.length) {
+                            txtIdx = 0;
+                        } else {
+                            setTimeout(typing, 100)
+                        }
+                    }
+                    typing();
+                </script>
+
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="profile">
+                <div class="content">
+                    <div class="photo">
+                        <div class="img">
+                            <img src="https://postfiles.pstatic.net/MjAyMzEwMDVfMjI4/MDAxNjk2NDY3OTY4Mzc3.6dqmPcIUXjtVjGeSVOnWAJfb7Xh8EedzRbt8NM4mseEg.Qt_qubyXzP1iS4nU_W9kOOFVc-O5-2I_erM8OKsNhBsg.JPEG.dntjq5130/KakaoTalk_20231005_100043416.jpg?type=w966"
+                                class="img" alt="...">
+                        </div>
+                        <div class="box">
+                            <ul class="list">
+                                <li class="list-group-item">이름 유우섭</span></li>
+                                <li class="list-group-item">물리치료학과 졸업</li>
+                                <li class="list-group-item" id="item3">면허 취득 후 병원에서 일하는것이 맞지 않다고 생각했고, 타일을 하던 중 공부하고 싶어서
+                                    지원</li>
+                                <li class="list-group-item">MBTI: infp</li>
+                                <li class="list-group-item">말 수는 적고 자기주장은 강한편이지만, 다수의 의견에 수긍할 줄 알며 팀의 지향점에 집중하는 성격.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="gallay">
+            <div class="gallay-box">
+
+                <div class="modal-box">
+
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal">
+                        <img src="https://th.bing.com/th/id/OIP._e3zfeBwKpGQLW7SsWrCXgHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="" class="">
+                    </button>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- 모달 헤더 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">내가 좋아하는 클럽</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- 모달 내용 -->
+                                <div class="modal-body">
+                                    제가 가장 좋아하는 클럽은 '맨체스터 유나이티드입니다.'
+
+                                    어릴적부터 새벽에 일어나 티비에 앉아 맨유 경기보는 것을 좋아했고 지금도 굉장히 좋아하며 꾸준히 follow하고 있습니다.
+                                </div>
+
+                                <!-- 모달 푸터 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-box">
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal2">
+                        <img src="https://th.bing.com/th/id/OIP.su-MPo3Klva7tZv8RkMl7QHaHZ?pid=ImgDet&rs=1" alt=""
+                            class="">
+                    </button>
+                    <div class="modal" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content" id=" player">
+
+                                <!-- 모달 헤더 -->
+                                <div class="modal2-header">
+                                    <h4 class="modal-title">내가 좋아하는 선수</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- 모달 내용 -->
+                                <div class="modal-body">
+                                    제가 가장 좋아하는 선수는 '무키 베츠'입니다.
+                                    단신이지만 큰 타구를 만들고 수비도 잘하며 발이 빠른 파이브 툴 선수로서
+                                    인성적으로 굉장히 훌륭한 선수입니다.
+                                </div>
+
+                                <!-- 모달 푸터 -->
+                                <div class="modal2-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-box">
+
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal3">
+                        <img src="https://postfiles.pstatic.net/MjAyMzEwMDVfMjk5/MDAxNjk2NDY3MzQ5MDc4.tk8T8kNyVFc03eO2UWFC7FKr_1CbYBIt_2ILP99IWrgg.HRDNZqURqpaVhG0XGB0TC0c0aL8l2LP2F9InN2Z0i94g.JPEG.dntjq5130/KakaoTalk_20231005_095215518.jpg?type=w966"
+                            alt="" class="">
+                    </button>
+                    <div class="modal" id="myModal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- 모달 헤더 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">바다</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- 모달 내용 -->
+                                <div class="modal-body">
+                                    저는 바다를 굉장히 좋아합니다. 보고있으면 마음이 편해지고 빠져 놀고싶은 생각이 가득하죠
+
+                                    나중에 은퇴하면 바닷가 근처에 자리잡고 살고싶은 생각이 있습니다.
+                                </div>
+
+                                <!-- 모달 푸터 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-box">
+
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#myModal4">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDA2MjBfNTgg%2FMDAxNTkyNjE4NjIzOTU2.3yHOm3QRw1n-lyyAZUrVq95kYGt4v_V_DSC4rVYSkewg.-UOl6cBIu-Ioay322QzmAINEP6sp301FDinav_SriKMg.JPEG%2Finbound2183103602858221345.jpg&type=sc960_832"
+                            alt="" class="">
+                    </button>
+                    <div class="modal" id="myModal4">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- 모달 헤더 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">가장 좋아하는 취미</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- 모달 내용 -->
+                                <div class="modal-body">
+                                    가장 좋아하는 취미는 농구입니다 
+
+                                    물론 지금은 쉬고있지만..다시 자리를 잡고 시간이 지나면 농구를 하러 다니고 있지 않을까 싶습니다.
+                                </div>
+
+                                <!-- 모달 푸터 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="end">
+            <div class="end-box">
+                <div class="end-comment">
+                    <button type="button" class="btn btn-primary btn-lg" id="myLink"
+                        onclick="redirectToURL()">thankyou</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</html>
