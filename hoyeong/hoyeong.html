@@ -34,20 +34,26 @@
 
   <body>
     <div id="index">
+      <a href="../members.html">
+        <span class="goback"> 다른 팀원이 궁금하시다면 클릭! 👈🏻</span>
+      </a>
       <div id="index_info">
         <div id="index_img-wrapper">
-          <img src="./img/9FDCB57E-5F7B-4AF2-9FF8-D8CF917721AD_1_105_c.jpeg" />
+          <img
+            class="profile"
+            src="./img/9FDCB57E-5F7B-4AF2-9FF8-D8CF917721AD_1_105_c.jpeg"
+          />
         </div>
         <span>Hoyeong , Jeon</span>
         <div class="icons">
-          <a href="#">
+          <a href="https://github.com/HoyeongJeon" target="_blank">
             <iconify-icon
               icon="mdi:github"
               width="20"
               height="20"
             ></iconify-icon
           ></a>
-          <a href="#">
+          <a href="https://securityinit.tistory.com/" target="_blank">
             <iconify-icon
               icon="simple-icons:tistory"
               width="20"
@@ -55,190 +61,267 @@
             ></iconify-icon>
           </a>
         </div>
+        <hr width="50%" align="right" class="index-divider" />
       </div>
-      <br />
       <nav id="layout-left_contents">
-        <h3 class="click">ABOUT</h3>
-        <h3 class="click">My 💪 Points!</h3>
-        <h3 class="click">HOW I WORK?</h3>
-        <h3 class="click">INTERESTS</h3>
+        <a href="#about">
+          <h3 class="click">ABOUT</h3>
+        </a>
+        <a href="#strength" class="point">
+          <h3 class="click">MY 💪 POINTS!</h3>
+        </a>
+        <a href="#workstyle" class="work">
+          <h3 class="click">HOW DO I WORK?</h3>
+        </a>
       </nav>
+
       <!-- 목차 내용 -->
     </div>
-    <section class="about">
-      <div class="card mb-3" id="card-container">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
+    <a name="about">
+      <section class="about">
+        <div class="card mb-3" id="card-container">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./img/9FDCB57E-5F7B-4AF2-9FF8-D8CF917721AD_1_105_c.jpeg"
+                      class="d-block w-100 rounded carouserl-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/BE63D205-2B19-4B7C-A56B-5AA6C6252A9E_1_105_c.jpeg"
+                      class="d-block w-100 rounded carouserl-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/E0575031-FCC2-4E84-93E8-2238A33774A9_1_105_c.jpeg"
+                      class="d-block w-100 rounded carouserl-img"
+                      alt="..."
+                    />
+                  </div>
+                </div>
                 <button
+                  class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
                 <button
+                  class="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./img/9FDCB57E-5F7B-4AF2-9FF8-D8CF917721AD_1_105_c.jpeg"
-                    class="d-block w-100 rounded carouserl-img"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./img/BE63D205-2B19-4B7C-A56B-5AA6C6252A9E_1_105_c.jpeg"
-                    class="d-block w-100 rounded carouserl-img"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./img/E0575031-FCC2-4E84-93E8-2238A33774A9_1_105_c.jpeg"
-                    class="d-block w-100 rounded carouserl-img"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 id="about_title">
-                안녕하세요.
-                <br />
-                Node js 9기에 참가하게 된
-                <br />
-                6조 전호영입니다.
-              </h5>
-              <div class="card-text">
-                <p>
-                  생각한 것들을 직접 만들 수 있는 개발에 매력을 느껴 부트캠프에
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 id="about_title">
+                  안녕하세요.
                   <br />
-                  참가하게 되었습니다!
-                  <br />다가오는 4.5개월의 시간동안 서로 도와주며 개발을
-                  해보아요! <br />캠프를 인연으로, 계속 이어갈 수 있는 개발
-                  인연을 만났으면 좋겠어요!
-                </p>
+                  Node js 9기에 참가하게 된
+                  <br />
+                  6조 전호영입니다.
+                </h5>
+                <div class="card-text">
+                  <p>
+                    생각한 것들을 직접 만들 수 있는 개발에 매력을 느껴
+                    부트캠프에
+                    <br />
+                    참가하게 되었습니다!
+                    <br />다가오는 4.5개월의 시간동안 서로 도와주며 개발을
+                    해보아요! <br />캠프를 인연으로, 계속 이어갈 수 있는 개발
+                    인연을 만났으면 좋겠어요!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="strength">
-      <div class="strength-pointsbox">
-        <div class="text-bg-dark strength-point">
-          <img src="./img/rugby.jpeg" class="img-fluid rounded" alt="..." />
-          <div class="card-img-overlay strength-content">
-            <!-- <h5 class="card-title strength-explanation"></h5> -->
-            <p class="card-text strength-explanation">
-              아시아 럭비 대회에서 말레이시아 팀의 LO를 맡았어요!
-            </p>
+      </section>
+    </a>
+    <div class="division-line"></div>
+    <a name="strength">
+      <section class="strength">
+        <div class="strength-pointsbox">
+          <div class="text-bg-dark news-wrap">
+            <div class="news-image strength-point tmi-photo">
+              <img
+                src="./img/rugby.jpeg"
+                class="card-img"
+                id="refuge-news"
+                alt="..."
+              />
+            </div>
+            <div class="news-text tmi-text">
+              <p align="left">
+                아시아 럭비 대회에서 <br />말레이시아 팀의 LO를 맡았어요!
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="text-bg-dark strength-point">
-          <img src="./img/hobby.jpeg" class="card-img" alt="..." />
-          <div class="card-img-overlay strength-content">
-            <!-- <h5 class="card-title strength-explanation"></h5> -->
-            <p class="card-text strength-explanation">
-              요즘 클라이밍을 취미로 하고있습니다! <br />
-              너무너무 재밌어요 ㅎㅎ
-            </p>
+          <div class="text-bg-dark news-wrap">
+            <div class="news-image strength-point tmi-photo">
+              <img
+                src="./img/hobby.jpeg"
+                class="card-img"
+                id="refuge-news"
+                alt="..."
+              />
+            </div>
+            <div class="news-text tmi-text">
+              <p align="left">
+                최근에 클라이밍에 빠졌어요! <br />
+                너무너무 재밌어요 ㅎㅎ
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="text-bg-dark news-wrap">
-          <div class="news-image">
-            <img
-              src="./img/refuge_news.png"
-              class="card-img"
-              id="refuge-news"
-              alt="..."
-            />
-          </div>
-          <div class="news-text">
-            <p>
-              독일에서 우크라이나 난민의 독일 정착을 도와주는 프로젝트를 진행한
-              적이 있습니다. <br />
-              이 프로젝트가 저의 장점을 잘 보여주는 하나의 예시라고 생각합니다.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="strength-overview">
-        <p align="left">
-          제가 생각하는 제 장점은 다른 사람들이 도움을 청했을 때 잘 도와주고,
-          사람들 사이의 연결고리 역할을 잘 한다고 생각해요! <br />
-          다른 사람이 어떤 어려움을 겪고 있을 때, 알려주고, 함께 해결책을
-          고민하는 성격이고 <br />
-          그렇기에 협업을 할 때 도움이 된다고 생각해요 <br />
-          책임있는 역할을 맡는 것을 두려워 하지 않는 성격도 장점이라 생각이
-          되네요 ㅎㅎ
-        </p>
-      </div>
-    </section>
-    <section class="workstyle">
-      <div class="strength-pointsbox">
-        <div class="text-bg-dark news-wrap">
-          <div class="news-image strength-point tmi-photo">
-            <img
-              src="./img/hobby.jpeg"
-              class="card-img"
-              id="refuge-news"
-              alt="..."
-            />
-          </div>
-          <div class="news-text tmi-text">
-            <p>
-              독일에서 우크라이나 난민의 독일 정착을 도와주는 프로젝트를 진행한
-              적이 있습니다. <br />
-              이 프로젝트가 저의 장점을 잘 보여주는 하나의 예시라고 생각합니다.
-            </p>
+          <div class="text-bg-dark news-wrap">
+            <div class="news-image">
+              <img
+                src="./img/refuge_news.png"
+                class="card-img"
+                id="refuge-news"
+                alt="..."
+              />
+            </div>
+            <div class="news-text">
+              <p>
+                독일에서 우크라이나 난민의 독일 정착을 도와주는 프로젝트를
+                진행한 적이 있습니다. <br />
+                이 프로젝트가 저의 장점을 잘 보여주는 하나의 예시라고
+                생각합니다.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <script src="./app.js"></script>
+        <div class="strength-overview">
+          <p align="left">
+            제가 생각하는 제 장점은 다른 사람들이 도움을 청했을 때 잘 도와주고,
+            사람들 사이의 연결고리 역할을 잘 한다고 생각해요! <br />
+            다른 사람이 어떤 어려움을 겪고 있을 때, 알려주고, 함께 해결책을
+            고민하는 성격이고 <br />
+            그렇기에 협업을 할 때 도움이 된다고 생각해요 <br />
+            책임있는 역할을 맡는 것을 두려워 하지 않는 성격도 장점이라 생각이
+            되네요 ㅎㅎ
+          </p>
+        </div>
+      </section>
+    </a>
+    <div class="division-line"></div>
+    <a name="workstyle">
+      <div class="snowflake"></div>
+      <section class="workstyle">
+        <div class="strength-pointsbox">
+          <div class="text-bg-dark news-wrap">
+            <div class="news-image strength-point tmi-photo">
+              <img
+                src="./img/porto.jpeg"
+                class="card-img"
+                id="refuge-news"
+                alt="..."
+              />
+            </div>
+            <div class="news-text tmi-text">
+              <p align="left">
+                포르투를 가보신 적 있으신가요? <br />
+                저도 나름 여행을 좋아하는데요,
+                <br />
+                포르투가 가장 좋았습니다!
+                <br />
+                여러분이 좋아하시는 여행지를<br />
+                소개해주세요~!
+              </p>
+            </div>
+            <p class="workstyle_button">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+              >
+                일할 때 저는 이것을 가장 중요하게 생각해요! 👈🏻 (click!)
+              </button>
+            </p>
+            <div class="workstyle-wrap" style="min-height: 120px">
+              <div
+                class="collapse collapse-horizontal"
+                id="collapseWidthExample"
+              >
+                <div class="card card-body" style="width: 350px">
+                  <p>
+                    저는 문서화가 가장 중요하다고 생각해요! <br />
+                    문서를 잘 정리하면 나중에 다시 볼 수 있고, <br />
+                    소통 시 오류가 줄어드니까요!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-bg-dark news-wrap">
+            <div class="text-bg-dark news-image strength-point video-wrap">
+              <video class="video" autoplay muted loop>
+                <source type="video/mp4" src="./vids/santa_music.mp4" />
+              </video>
+            </div>
+            <div class="news-text tmi-text video-text">
+              <p align="center">
+                크리스마스 분위기는 뭔가 몽글몽글 하지 않나요? <br />
+                저는 크리스마스 분위기를 좋아해요!
+                <br />
+                <br />
+                (산타할아버지는 어떤 음악을 듣고 있을까요?🤔 <br />
+                비디오를 클릭해보세요!🎄)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </a>
+    <script src="/hoyeong/js/music.js"></script>
+    <script src="/hoyeong/js/snow.js"></script>
   </body>
 </html>
