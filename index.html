@@ -47,9 +47,9 @@
     <!-- 메인 페이지 -->
     <div class="parent">
       <section class="main-section">
-        <strong class="current">
-          <span class="blind"> </span>20.2<span class="degree">°</span>
-        </strong>
+        <div class="current weather">
+          <span class="blind"></span>
+        </div>
         <div class="intro1-wrap">
           <div class="intro1">조조를 소개합니다.</div>
           <pre class="text" id="target" align="left">
@@ -67,12 +67,12 @@
             <li class="team-item">
               <a href="./sjh/mypage.html">
                 <div class="profile profile_red">
-                  <img
-                    src="sjh/ㅇㅇㅇ.jpg"
-                  />
+                  <img src="sjh/ㅇㅇㅇ.jpg" />
                   <div class="profile-contents">
                     <h2>손주형<span> 소개 </span></h2>
-                    <p style="font-size: 15px; color:red">지금 제가 뭘 하고 있는지 모르겠습니다.</p>
+                    <p style="font-size: 15px; color: red">
+                      지금 제가 뭘 하고 있는지 모르겠습니다.
+                    </p>
                   </div>
                 </div>
               </a>
@@ -119,6 +119,7 @@
       </section>
     </div>
 
+    <script src="./js/weather.js"></script>
     <script>
       TypeHangul.type("#target", {
         intervalType: 40,
