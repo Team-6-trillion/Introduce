@@ -55,6 +55,15 @@
   line-height: 1;
 }
 
+.temperature {
+  font-size: medium;
+  font-weight: 700;
+}
+
+.weather img {
+  width: 30px;
+}
+
 #target::after {
   content: "|";
   right: 0;
