@@ -23,6 +23,7 @@
 }
 
 .intro1-wrap {
+  position: relative;
   margin-top: 150px;
 }
 
@@ -49,7 +50,7 @@
   font-family: "Pretendard-Regular";
   position: absolute;
   color: rgb(36, 36, 36);
-  left: 70px;
+  left: -10px;
   font-size: 34px;
   line-height: 1;
 }
