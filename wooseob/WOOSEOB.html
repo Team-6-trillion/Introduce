@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <!-- Bootstrap JavaScript 및 jQuery (선택 사항) -->
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script>
         function redirectToURL() {
-            var url = "https://www.naver.com/"; // 이곳에 원하는 URL을 넣으세요.
+            var url = "file:///C:/Users/dntjq/Desktop/%EC%8A%A4%ED%8C%8C%EB%A5%B4%ED%83%80/%ED%8C%80%EC%86%8C%EA%B0%9C/Introduce/index.html"; // 이곳에 원하는 URL을 넣으세요.
             window.location.href = url;
         }
     </script>
@@ -61,7 +62,7 @@
 
         }
 
-        .titlec {
+        .title {
 
             display: flex;
             justify-content: center;
@@ -90,8 +91,6 @@
 
         .profile {
 
-
-
             width: 2000px;
             height: 100%;
 
@@ -104,7 +103,6 @@
 
         .content {
 
-
             display: flex;
             justify-items: center;
             align-items: center;
@@ -112,7 +110,6 @@
             width: 1000px;
 
             margin-left: 400px;
-
 
         }
 
@@ -128,12 +125,9 @@
             width: 1000px;
             height: 550px;
 
-
-
         }
 
         .box {
-
 
             display: flex;
             justify-items: center;
@@ -150,25 +144,15 @@
         }
 
         .list {
-
-
-            display: flex;
+        display: flex;
             flex-direction: column;
 
 
             width: 800px;
             height: 80%;
-            font-size: 25pt;
-            ;
-
-
-
-
+            font-size: 28pt;
+        
         }
-
-
-
-
 
         .img {
             border-radius: 100px;
@@ -190,11 +174,7 @@
             background-color: transparent;
             border: none;
             
-            color: white;}
-
-
-
-
+            color: black;}
 
 
         .gallay-box {
@@ -210,13 +190,6 @@
             margin-top: 200px;
             margin-bottom: 200px;
         }
-
-
-
-
-
-
-
 
         .end {
             border-radius: 20px;
@@ -279,23 +252,13 @@
         }
 
         .top-all {
-
-
-
-
             width: 100%;
             justify-items: center;
             align-items: center;
             flex-direction: row;
             display: flex;
-
         }
 
-   
-
-        
-
-    
 
         .modal-box button {
             border: 0px;
@@ -412,7 +375,7 @@
                                 <div class="modal-body">
                                     제가 가장 좋아하는 클럽은 '맨체스터 유나이티드입니다.'
 
-                                    어릴적부터 새벽에 일어나 티비에 앉아 맨유 경기보는 것을 좋아했고 지금도 굉장히 좋아하며 꾸준히 follow하고 있습니다.
+                                    어릴적부터 새벽에 일어나 티비에 앉아 맨유 경기보는 것을 좋아했고 지금도 굉장히 좋아하며 꾸준히 팔로우하고 있습니다.
                                 </div>
 
                                 <!-- 모달 푸터 -->
@@ -434,7 +397,7 @@
                             <div class="modal-content" id=" player">
 
                                 <!-- 모달 헤더 -->
-                                <div class="modal2-header">
+                                <div class="modal-header">
                                     <h4 class="modal-title">내가 좋아하는 선수</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
@@ -447,7 +410,7 @@
                                 </div>
 
                                 <!-- 모달 푸터 -->
-                                <div class="modal2-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
                                 </div>
 
