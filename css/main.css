@@ -99,16 +99,16 @@
   color: rgb(43, 43, 43);
   text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.5);
   left: 102px;
-  top: 480px;
+  top: 500px;
   z-index: 9;
 }
 
 .intro2cover {
   background-color: rgb(255, 180, 180);
-  width: 720px;
+  width: 760px;
   height: 70px;
   position: absolute;
   left: 90px;
-  top: 560px;
+  top: 530px;
   z-index: 3;
 }
