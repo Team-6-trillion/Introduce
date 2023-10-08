@@ -20,7 +20,6 @@ const getCurrentLocation = async (position) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${celsius}&appid=${API_KEY}`;
   const response = await fetch(url);
   const jsonData = await response.json();
-  console.log(jsonData);
   let temp = jsonData.main.temp;
   let weatherIconCode = jsonData.weather[0].icon;
   paintWeather(temp, weatherIconCode);

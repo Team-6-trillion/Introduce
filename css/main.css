@@ -53,6 +53,11 @@
   left: -10px;
   font-size: 34px;
   line-height: 1;
+  -ms-overflow-style: none;
+}
+
+.text::-webkit-scrollbar {
+  display: none;
 }
 
 .temperature {
@@ -62,6 +67,14 @@
 
 .weather img {
   width: 30px;
+}
+
+.visitor-book {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 40px;
+  right: 10px;
 }
 
 #target::after {
