@@ -9,7 +9,7 @@ const paintWeather = (temp, weatherIconCode) => {
   weatherIconImg.src = `../icons/weatherIcons/${weatherIconCode}.png`;
   weatherSpan.innerText = `${temp}°`;
   // weatehrIcon.appendChild(weatherIconImg);
-  weatherWrap.appendChild(weatherIconImg);
+  weatherWrap.prepend(weatherIconImg);
 };
 
 // 위치 갖고오는 함수
