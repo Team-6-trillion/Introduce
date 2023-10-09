@@ -5,7 +5,7 @@ const paintWeather = (temp, weatherIconCode) => {
   const weatherSpan = document.querySelector(".weather > span");
   const weatherWrap = document.querySelector(".weather");
   const weatherIconImg = document.createElement("img");
-  weatherIconImg.src = `../icons/weatherIcons/${weatherIconCode}.png`;
+  weatherIconImg.src = `icons/weatherIcons/${weatherIconCode}.png`;
   weatherSpan.innerText = `${temp}°`;
   weatherWrap.prepend(weatherIconImg);
 };
