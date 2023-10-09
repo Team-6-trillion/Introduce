@@ -2,12 +2,9 @@ import { db } from "./firebase.js";
 import {
   collection,
   addDoc,
-  doc,
   query,
-  deleteDoc,
   getDocs,
   orderBy,
-  getCountFromServer,
 } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
 $("#commentbtn").click(async function () {
@@ -22,12 +19,6 @@ $("#commentbtn").click(async function () {
   paintComment(comment);
   $("#capital").val("");
   $("#comment").val("");
-});
-
-$(document).on("click", "#deleteBtn", async function (event) {
-  const commentId = event.target.parentNode.id;
-  await deleteDoc(doc(db, "comments", commentId));
-  window.location.reload();
 });
 
 const paintComment = (comment) => {
@@ -48,13 +39,6 @@ const paintComment = (comment) => {
 </div>
                `;
   $(".commentList").prepend(comment_html);
-};
-
-const getCommentsCnt = async () => {
-  const commentsCntRef = collection(db, "comments");
-  const commentsCntSnapshot = await getCountFromServer(commentsCntRef);
-  console.log("count: ", commentsCntSnapshot.data().count);
-  return commentsCntSnapshot.data().count;
 };
 
 const init = async () => {

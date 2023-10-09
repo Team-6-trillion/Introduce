@@ -3,12 +3,10 @@ const API_KEY = "64779c24be2bccf0ecbb74005b638849";
 
 const paintWeather = (temp, weatherIconCode) => {
   const weatherSpan = document.querySelector(".weather > span");
-  // const weatehrIcon = document.querySelector(".weather span:last-child");
   const weatherWrap = document.querySelector(".weather");
   const weatherIconImg = document.createElement("img");
   weatherIconImg.src = `../icons/weatherIcons/${weatherIconCode}.png`;
   weatherSpan.innerText = `${temp}°`;
-  // weatehrIcon.appendChild(weatherIconImg);
   weatherWrap.prepend(weatherIconImg);
 };
 
