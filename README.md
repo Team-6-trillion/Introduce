@@ -1,34 +1,13 @@
-# 6조 벌고싶은 사람들...
+# 조조
 
-```
-6조 소개페이지 Repository 입니다.
-```
+**조조등장**⭐️
 
-### 세팅
+![jojo](https://github.com/Team-6-trillion/Introduce/assets/78394999/2c5a592a-e94c-4fc9-aad7-c0979476e2e0)
 
-1. 원격 저장소 클론하기
+### 사용기술
 
-```
-git clone https://github.com/Team-6-trillion/Introduce.git
-```
-
-2. 브랜치 생성하기
-
-```
-git checkout -b {영어 이름} # git checkout -b hoyeong
-```
-
-### Pull과 Commit
-
-1. 코드를 작성한 뒤 commit 합니다.
-
-```
-git commit -m "{자신이 작성한 코드가 무엇인지}"  # git commit -m "팀원 선택 페이지 초안"
-git push origin {영어이름}  # git push origin hoyeong
-```
-
-2. Github에 PULL REQUEST 작성
-
-```
-!!! PULL REQUEST를 생성한 뒤 merge 하지 않기로 해요!
-```
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+<img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
