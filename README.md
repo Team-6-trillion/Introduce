@@ -1,8 +1,7 @@
 # 조조
 
 **조조등장**⭐️
-
-![jojo](https://github.com/Team-6-trillion/Introduce/assets/78394999/2c5a592a-e94c-4fc9-aad7-c0979476e2e0)
+![jojo](https://github.com/Team-6-trillion/Introduce/assets/78394999/abfa406b-d70b-43e2-8cfa-1f6af5eecf3e)
 
 ### 사용기술
 
