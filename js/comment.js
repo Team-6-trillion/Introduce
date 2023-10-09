@@ -7,6 +7,7 @@ import {
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
+// commentbtn 클릭 시 입력 정보를 firestore에 올림
 $("#commentbtn").click(async function () {
   let capital = $("#capital").val();
   let comment = $("#comment").val();
@@ -21,6 +22,7 @@ $("#commentbtn").click(async function () {
   $("#comment").val("");
 });
 
+// 화면 그려주는 함수
 const paintComment = (comment) => {
   let comment_html = `
   <div class="mb-3 row">
