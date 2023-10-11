@@ -1,0 +1,22 @@
+name: OPENWEATHER API KEY
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up environment variables
+      env:
+        OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+
+    - name: Run your JavaScript code
+      run: |
+        node js/weather.js
