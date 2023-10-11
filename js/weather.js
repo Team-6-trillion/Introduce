@@ -1,4 +1,5 @@
 // Weather API 날씨
+import { config } from "./apikey.js";
 const API_KEY = config.apikey;
 
 const paintWeather = (temp, weatherIconCode) => {
