@@ -1,5 +1,5 @@
 // Weather API 날씨
-const API_KEY = "64779c24be2bccf0ecbb74005b638849";
+const API_KEY = process.env.OPENWEATHER_API_KEY;
 
 const paintWeather = (temp, weatherIconCode) => {
   const weatherSpan = document.querySelector(".weather > span");
